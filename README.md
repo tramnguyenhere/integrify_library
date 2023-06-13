@@ -20,7 +20,7 @@ Your job is to model this system using classes, interfaces, and/or abstract clas
    - `Comic` has `Artist`, `Novel` has `Genre`
    - `Comic`, `Novel`, `TextBook` can be borrowed, but `ResearchPaper` cannot. If books are borrowable, they should have both `Borrow()` and `Return()` method
    - `TextBook`, and `ResearchPaper` can be printed (to certain amount of pages), but `Comic`, `Novel` cannot. The `PrintPages(int startPage, endPage)`method uses `Console.WriteLine` to inform the start page and end page to be printed, in case the amount of to-be-printed pages do not exceed the maximum allowed pages.
-   - `Comic`and `Novel` should have different implementations of `PrintInfo()` with eextra information about the extra properties, while `TextBook`, and `ResearchPaper` have default implementation.
+   - `Comic`and `Novel` should have different implementations of `PrintInfo()` with extra information about the extra properties, while `TextBook`, and `ResearchPaper` have default implementation.
 
 ## Requirements
 
