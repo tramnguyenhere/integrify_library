@@ -1,4 +1,5 @@
 using Interface;
+namespace BookModel;
 
 public abstract class Book : IBookBase
 {
