@@ -1,9 +1,17 @@
+using Entity;
+
 namespace PersonModel;
 
-public abstract class Person
+public enum Role
+{
+    Customer,
+    Librarian
+}
+
+public abstract class Person : BaseEntity
 {
     private string _name;
-    private int _id;
+    public Role Role { get; }
 
     public string Name
     {
@@ -30,21 +38,10 @@ public abstract class Person
             }
         }
     }
-    public int Id
-    {
-        get
-        {
-            return _id;
-        }
-        set
-        {
-            _id = value;
-        }
-    }
-    public Person(string name, int id)
+    public Person(string name, Role role) : base()
     {
         _name = name;
-        _id = id;
+        Role = role;
     }
 
     public override string ToString()

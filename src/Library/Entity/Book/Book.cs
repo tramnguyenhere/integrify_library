@@ -1,5 +1,6 @@
 using Interface;
 using Entity;
+using LibraryManagement;
 
 namespace BookModel;
 
@@ -96,7 +97,7 @@ public abstract class Book : BaseEntity
         }
     }
 
-    public Book(string title, string author, string isbn, int publicationYear, bool canBorrow, bool canPrint)
+    public Book(string title, string author, string isbn, int publicationYear, bool canBorrow, bool canPrint) : base()
     {
         _title = title;
         _author = author;

@@ -1,4 +1,5 @@
 using Interface;
+using LibraryManagement;
 
 namespace BookModel;
 
@@ -16,14 +17,5 @@ public class Comic : Book, IBorrowAndReturn
     {
         base.PrintInfo();
         Console.WriteLine($"Artist: {_artist}");
-    }
-
-    public void Borrow()
-    {
-
-    }
-    public void Return()
-    {
-
     }
 }

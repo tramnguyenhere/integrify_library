@@ -5,6 +5,6 @@ public abstract class BaseEntity
 
     public BaseEntity()
     {
-        Id = new Guid().ToString();
+        Id = Guid.NewGuid().ToString();
     }
 }
