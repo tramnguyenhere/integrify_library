@@ -1,22 +1,23 @@
 using PersonModel;
+using BookModel;
 using Interface;
 
 public class Customer : Person
 {
-    private List<IBookBase> _borrowedBooks { get; set; }
-    public Customer(string name, int id, List<IBookBase> borrowedBooks) : base(name, id)
+    private List<Book> _borrowedBooks { get; set; }
+    public Customer(string name, int id, List<Book> borrowedBooks) : base(name, id)
     {
         Name = name;
         Id = id;
-        _borrowedBooks = new List<IBookBase>();
+        _borrowedBooks = new List<Book>();
     }
 
-    public void BorrowBook(IBookBase toBeBorrowedbook)
+    public void BorrowBook(Book toBeBorrowedbook)
     {
         _borrowedBooks.Add(toBeBorrowedbook);
     }
 
-    public void ReturnBook(IBookBase toBeReturnedBook)
+    public void ReturnBook(Book toBeReturnedBook)
     {
         if (_borrowedBooks.Any(book => book == toBeReturnedBook))
         {
