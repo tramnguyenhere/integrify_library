@@ -112,11 +112,11 @@ public abstract class Book : BaseEntity
         Console.WriteLine($"Id: {Id}\nTitle: {Title}\nAuthor: {Author}\nISBN: {ISBN}\nYear of Publication: {PublicationYear}");
     }
 
-    public void PrintPages(int startPage, int endPage)
+    public virtual void PrintPages(int startPage, int endPage)
     {
         if (_canPrint)
         {
-            Console.WriteLine($"Book print from {startPage} to {endPage}");
+            Console.WriteLine($"Book print from page {startPage} to page {endPage}");
         }
         else
         {
