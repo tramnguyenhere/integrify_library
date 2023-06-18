@@ -70,6 +70,20 @@ public class Library
             Console.WriteLine("There is no borrowed book!");
         }
     }
+    public void PrintListBooks()
+    {
+        if (_books != null)
+        {
+            foreach (Book book in _books)
+            {
+                book.PrintInfo();
+            }
+        }
+        else
+        {
+            Console.WriteLine("There is no book!");
+        }
+    }
 
     public void AddBook(Person person, Book book)
     {

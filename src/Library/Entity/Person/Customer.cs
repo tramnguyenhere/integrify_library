@@ -1,6 +1,7 @@
-using PersonModel;
 using BookModel;
 using Interface;
+
+namespace PersonModel;
 
 public class Customer : Person
 {

@@ -5,7 +5,7 @@ namespace PersonModel;
 
 public class Librarian : Person
 {
-    public Librarian(string name, int id) : base(name, PersonModel.Role.Librarian)
+    public Librarian(string name) : base(name, PersonModel.Role.Librarian)
     {
 
     }
